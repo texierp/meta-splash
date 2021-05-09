@@ -17,8 +17,9 @@ SRCBRANCH = "1.0.x"
 SRC_URI = "\
     git://github.com/OSSystems/easysplash.git;branch=${SRCBRANCH} \
     file://${BPN}.default \
-    file://0001-init-systemd-unblank-framebuffer-before.patch \
 "
+
+SRC_URI_sama5d27-som1-ek-sd += "file://0001-init-systemd-unblank-framebuffer-before.patch"
 
 PV = "1.0.0+git${SRCPV}"
 
