@@ -7,6 +7,7 @@ SRC_URI_append = " \
 "
 
 SPLASH_IMAGES = "file://splash.png;outsuffix=default"
+SPLASH_IMAGES_rpi = "file://splash.png;outsuffix=raspberrypi"
 
 do_configure_append () {
     cd ${S}
